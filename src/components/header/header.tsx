@@ -8,8 +8,10 @@ export const Header = () => {
     <header>
       <Wrapper>
         <div className='flex w-screen items-center justify-between'>
-          <div className='flex'>
-            <Link href='/'>Stanisław Synowiec</Link>
+          <div className='flex items-center justify-center gap-4'>
+            <Link href='/' className='text-lg font-bold'>
+              ssynowiec.pl
+            </Link>
             <Navigation />
           </div>
           <ThemeSwitcher />

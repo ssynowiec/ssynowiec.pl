@@ -1,9 +1,4 @@
-import Link from 'next/link';
-
-interface NavigationLink {
-  text: string;
-  href: string;
-}
+import { NavigationLink, NavLink } from '@/components/navLink/navLink';
 
 const links: NavigationLink[] = [
   { text: 'contact', href: '/contact' },
@@ -14,11 +9,9 @@ const links: NavigationLink[] = [
 export const Navigation = () => {
   return (
     <nav>
-      <ul className='flex items-center justify-center'>
+      <ul className='flex items-center justify-center gap-4'>
         {links.map((link) => (
-          <li key={link.href} className='mr-4'>
-            <Link href={link.href}>{link.text}</Link>
-          </li>
+          <NavLink link={link} />
         ))}
       </ul>
     </nav>
