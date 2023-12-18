@@ -3,10 +3,10 @@ import { SpeedInsights } from '@vercel/speed-insights/next';
 import { GeistSans } from 'geist/font/sans';
 import './globals.scss';
 import { ReactNode } from 'react';
-import { Footer } from '@/components/footer/footer';
-import GoogleAnalytics from '@/components/googleAnalytics/GoogleAnalytics';
-import { Providers } from '@/components/providers/Providers';
 import { Header } from '@/components/header/header';
+import { Footer } from '@/components/footer/footer';
+import { Providers } from '@/components/providers/providers';
+import GoogleAnalytics from '@/components/googleAnalytics/googleAnalytics';
 
 export const metadata: Metadata = {
   title: 'Stanisław Synowiec',

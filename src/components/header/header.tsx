@@ -1,5 +1,5 @@
-import { Wrapper } from '@/components/wrapper/Wrapper';
-import { ThemeSwitcher } from '@/components/themeSwitcher/ThemeSwitcher';
+import { Wrapper } from '@/components/wrapper/wrapper';
+import { ThemeSwitcher } from '@/components/themeSwitcher/themeSwitcher';
 
 export const Header = () => {
   return (
