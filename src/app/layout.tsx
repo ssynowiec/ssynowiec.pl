@@ -14,7 +14,12 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
   return (
     <html lang='en'>
       <body className={`${GeistSans.className} flex h-screen flex-col`}>
-        <GoogleAnalytics />
+        {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID ? (
+          <GoogleAnalytics
+            ga_id={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}
+          />
+        ) : null}
+
         {children}
         <Footer />
         <SpeedInsights />
