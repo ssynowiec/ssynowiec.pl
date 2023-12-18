@@ -1,5 +1,12 @@
 {
   "name": "ssynowiec.pl",
+  "description": "My personal website",
+  "keywords": ["Stanisław Synowiec", "ssynowiec", "ssynowiec.pl", "next", "personal website"],
+  "author": "Stanisław Synowiec <stasyn1410@gmail.com> (https://ssynowiec.pl)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ssynowiec/ssynowiec.pl.git"
+  },
   "version": "0.1.0",
   "private": true,
   "scripts": {
