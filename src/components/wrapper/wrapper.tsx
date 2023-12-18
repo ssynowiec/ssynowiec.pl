@@ -1,9 +1,22 @@
 import { ReactNode } from 'react';
+import { clsx } from 'clsx';
 
 interface WrapperProps {
+  direction?: 'row' | 'column';
   children: ReactNode;
 }
 
-export const Wrapper = ({ children }: WrapperProps) => {
-  return <div className='mx-auto max-w-lg'>{children}</div>;
+export const Wrapper = ({ direction = 'row', children }: WrapperProps) => {
+  const directionClass = direction === 'column' ? 'flex-col' : 'flex-row';
+
+  return (
+    <div
+      className={clsx(
+        'mx-auto flex max-w-7xl items-center px-6 py-3',
+        directionClass,
+      )}
+    >
+      {children}
+    </div>
+  );
 };
