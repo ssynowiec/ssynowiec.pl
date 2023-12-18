@@ -6,6 +6,7 @@ import { ReactNode } from 'react';
 import { Footer } from '@/components/footer/footer';
 import GoogleAnalytics from '@/components/googleAnalytics/GoogleAnalytics';
 import { Providers } from '@/components/providers/Providers';
+import { Header } from '@/components/header/header';
 
 export const metadata: Metadata = {
   title: 'Stanisław Synowiec',
@@ -21,6 +22,7 @@ const RootLayout = ({ children }: { children: ReactNode }) => {
           />
         ) : null}
         <Providers>
+          <Header />
           {children}
           <Footer />
         </Providers>
