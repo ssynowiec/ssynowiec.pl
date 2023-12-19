@@ -12,7 +12,7 @@ export const Wrapper = ({ direction = 'row', children }: WrapperProps) => {
   return (
     <div
       className={clsx(
-        'mx-auto flex max-w-7xl items-center px-6 py-3',
+        'mx-auto flex w-full max-w-7xl items-center px-6 py-3',
         directionClass,
       )}
     >
