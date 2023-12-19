@@ -21,7 +21,7 @@ export const ThemeSwitcher = () => {
   }
 
   return (
-    <button onClick={toggleTheme}>
+    <button onClick={toggleTheme} aria-label='Toggle theme'>
       {theme === 'dark' ? <Sun /> : <Moon />}
     </button>
   );

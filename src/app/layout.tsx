@@ -10,6 +10,7 @@ import GoogleAnalytics from '@/components/googleAnalytics/googleAnalytics';
 
 export const metadata: Metadata = {
   title: 'Stanisław Synowiec',
+  description: 'Stanisław Synowiec - Frontend Developer personal website',
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
