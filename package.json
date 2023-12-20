@@ -26,8 +26,8 @@
   },
   "lint-staged":{
     "**/*.{js,jsx,ts,tsx}":[
-      "npx prettier --write",
-      "npx eslint --fix"
+      "pnpm prettier --write",
+      "pnpm eslint --fix"
     ]
   },
   "dependencies": {
