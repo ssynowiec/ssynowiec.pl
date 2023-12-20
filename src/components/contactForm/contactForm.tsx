@@ -1,6 +1,7 @@
 'use client';
 
 import { SubmitHandler, useForm } from 'react-hook-form';
+import { Button } from '@/components/button/button';
 
 interface Inputs {
   name: string;
@@ -25,7 +26,7 @@ export const ContactForm = () => {
       <input type='email' id='email' {...register('email')} />
       <label htmlFor='message'>Message</label>
       <textarea id='message' {...register('message')} />
-      <button type='submit'>Send message</button>
+      <Button type='submit'>Send message</Button>
     </form>
   );
 };
