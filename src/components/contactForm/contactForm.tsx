@@ -2,6 +2,7 @@
 
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { Button } from '@/components/button/button';
+import { Input } from '@/components/input/input';
 
 interface Inputs {
   name: string;
@@ -20,10 +21,8 @@ export const ContactForm = () => {
 
   return (
     <form className='flex flex-col py-3' onSubmit={handleSubmit(onSubmit)}>
-      <label htmlFor='name'>Name</label>
-      <input type='text' id='name' {...register('name')} />
-      <label htmlFor='email'>Email</label>
-      <input type='email' id='email' {...register('email')} />
+      <Input label='Name' register={register} name='name' />
+      <Input label='Email' register={register} name='email' type='email' />
       <label htmlFor='message'>Message</label>
       <textarea id='message' {...register('message')} />
       <Button type='submit'>Send message</Button>
