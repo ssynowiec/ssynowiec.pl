@@ -11,6 +11,9 @@ import GoogleAnalytics from '@/components/googleAnalytics/googleAnalytics';
 export const metadata: Metadata = {
   title: 'Stanisław Synowiec',
   description: 'Stanisław Synowiec - Frontend Developer personal website',
+  icons: { icon: '/favicon.ico' },
+  manifest: '/manifest.json',
+  authors: [{ name: 'Stanisław Synowiec', url: 'https://ssynowiec.pl' }],
 };
 
 const RootLayout = ({ children }: { children: ReactNode }) => {
