@@ -17,7 +17,7 @@ export const ContactForm = () => {
     formState: { errors },
   } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (data: any) => console.log(data);
+  const onSubmit: SubmitHandler<Inputs> = (data: Inputs) => console.log(data);
 
   return (
     <form className='flex flex-col py-3' onSubmit={handleSubmit(onSubmit)}>
