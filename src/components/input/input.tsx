@@ -29,6 +29,7 @@ export const Input = ({
           id={name}
           type={type}
           placeholder={placeholder}
+          required={required}
           {...rest}
           {...register(name)}
           className={classes}
@@ -37,6 +38,7 @@ export const Input = ({
         <textarea
           id={name}
           placeholder={placeholder}
+          required={required}
           {...rest}
           {...register(name)}
           className={classes}
