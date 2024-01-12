@@ -2,7 +2,7 @@ import { Wrapper } from '@/components/wrapper/wrapper';
 import { type Metadata } from 'next';
 import { ContactForm } from '@/components/contactForm/contactForm';
 import { PageTitle } from '@/components/pageTitle/pageTitle';
-import { Breadcrumbs } from '@/components/breadcrumbs/Breadcrumbs';
+import { Breadcrumbs } from '@/components/breadcrumbs/breadcrumbs';
 
 export const metadata: Metadata = {
   title: 'Contact with me | ssynowiec.pl',
