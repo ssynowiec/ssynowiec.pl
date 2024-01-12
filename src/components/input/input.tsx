@@ -4,6 +4,7 @@ interface InputProps {
   label: string;
   type?: 'text' | 'password' | 'email' | 'textarea';
   placeholder?: string;
+  required?: boolean;
 }
 
 export const Input = ({
@@ -12,6 +13,7 @@ export const Input = ({
   label,
   type = 'text',
   placeholder,
+  required = false,
   ...rest
 }: InputProps) => {
   const classes =
@@ -20,7 +22,7 @@ export const Input = ({
   return (
     <div className='my-1 flex flex-col'>
       <label htmlFor={name} className='my-2'>
-        {label}
+        {label} {required && <span className='text-red-500'>*</span>}
       </label>
       {type !== 'textarea' ? (
         <input
