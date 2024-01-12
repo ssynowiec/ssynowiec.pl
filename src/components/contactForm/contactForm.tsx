@@ -21,10 +21,21 @@ export const ContactForm = () => {
 
   return (
     <form className='flex flex-col py-3' onSubmit={handleSubmit(onSubmit)}>
-      <Input label='Name' register={register} name='name' />
-      <Input label='Email' register={register} name='email' type='email' />
-      <label htmlFor='message'>Message</label>
-      <textarea id='message' {...register('message')} />
+      <Input label='Name' placeholder='John' register={register} name='name' />
+      <Input
+        label='Email'
+        placeholder='jonh@example.com'
+        register={register}
+        name='email'
+        type='email'
+      />
+      <Input
+        label='Message'
+        placeholder='Your message'
+        register={register}
+        name='message'
+        type='textarea'
+      />
       <Button type='submit'>Send message</Button>
     </form>
   );
