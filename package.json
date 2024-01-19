@@ -24,40 +24,40 @@
     "format": "prettier --write .",
     "prepare": "husky install"
   },
-  "lint-staged":{
-    "**/*.{js,jsx,ts,tsx}":[
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
       "pnpm prettier --write",
       "pnpm eslint --fix"
     ]
   },
   "dependencies": {
-    "@vercel/speed-insights": "^1.0.2",
-    "clsx": "^2.0.0",
-    "geist": "^1.2.0",
+    "@vercel/speed-insights": "^1.0.5",
+    "clsx": "^2.1.0",
+    "geist": "^1.2.1",
     "lint-staged": "^15.2.0",
-    "next": "14.0.4",
+    "next": "14.1.0",
     "next-pwa": "^5.6.0",
     "next-sitemap": "^4.2.3",
     "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.49.2",
-    "sass": "^1.69.5"
+    "react-hook-form": "^7.49.3",
+    "sass": "^1.70.0"
   },
   "devDependencies": {
-    "@types/node": "^20.10.5",
-    "@types/react": "^18.2.45",
+    "@types/node": "^20.11.5",
+    "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.17",
     "eslint": "^8.56.0",
     "eslint-config-next": "14.0.4",
     "eslint-config-prettier": "^9.1.0",
     "git-format-staged": "^3.0.0",
-    "husky": "^8.0.0",
-    "postcss": "^8.4.32",
+    "husky": "^8.0.3",
+    "postcss": "^8.4.33",
     "prettier": "3.1.1",
-    "prettier-plugin-tailwindcss": "^0.5.9",
-    "tailwindcss": "^3.3.6",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.3.3"
   }
 }
