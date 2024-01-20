@@ -20,11 +20,20 @@ export const Footer = () => {
             </li>
             <li>
               <Link
-                href='https://www.linkedin.com/in/ssynowiecpl'
+                href='https://linkedin.com/in/ssynowiecpl'
                 target='_blank'
                 className='p-2'
               >
                 Linkedin
+              </Link>
+            </li>
+            <li>
+              <Link
+                href='https://x.com/ssynowiec1410'
+                target='_blank'
+                className='p-2'
+              >
+                X
               </Link>
             </li>
           </ul>
